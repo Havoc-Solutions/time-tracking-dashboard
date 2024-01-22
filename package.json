@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "time-tracking-dashboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "A time-tracking dashboard with dynamic content generation",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Havoc-Solutions/project.git"
+    "url": "git+https://github.com/Havoc-Solutions/time-tracking-dashboard.git"
   },
   "author": "EONRaider",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Havoc-Solutions/project/issues"
+    "url": "https://github.com/Havoc-Solutions/time-tracking-dashboard/issues"
   },
-  "homepage": "https://github.com/Havoc-Solutions/project#readme",
+  "homepage": "https://github.com/Havoc-Solutions/time-tracking-dashboard#readme",
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
