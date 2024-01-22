@@ -70,15 +70,7 @@ body {
   grid-row: span 2;
 }
 
-.user-info {
-  flex-direction: column;
-  gap: 43px;
-  padding: 37px 0 85px 32px;
-}
-
 .user-profile__photo {
-  @include utils.setDimensions(78px, 78px);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: 50%;
   border: 3px solid #D8D8D8;
 }
@@ -87,18 +79,12 @@ body {
   --flow-space: 3px;
 }
 
-.user-profile__title {
+.user-info__title {
   font-size: 15px;
 }
 
 .user-info__name {
   font-size: 40px;
-}
-
-.timeframe {
-  padding: 26px 0 0 32px;
-  flex-direction: column;
-  gap: 21px;
 }
 
 .timeframe__select {
@@ -164,11 +150,6 @@ body {
   font-size: 18px;
 }
 
-.card-info-wrapper {
-  flex-direction: column;
-  gap: 8px;
-}
-
 .card-info__current {
   font-size: 56px;
 }
@@ -208,9 +189,77 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     gap: 30px;
   }
+
+  .user-info {
+    padding: 37px 0 85px 32px;
+    flex-direction: column;
+    gap: 43px;
+  }
+
+  .user-profile__photo {
+    @include utils.setDimensions(78px, 78px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .timeframe {
+    padding: 26px 0 0 32px;
+    flex-direction: column;
+    gap: 21px;
+  }
+
+  .card-info-wrapper {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 // MOBILE VERSION
 @media only screen and (width < 1440px) {
+  main {
+    margin: 81px 24px;
+    gap: 24px;
+    grid-template-columns: 327px;
+  }
 
+  .user-info {
+    align-items: center;
+    padding: 35px 0 35px 32px;
+    gap: 20px;
+  }
+
+  .user-profile__photo {
+    @include utils.setDimensions(64px, 64px);
+  }
+
+  .user-info-wrapper {
+    --flow-space: 4px;
+  }
+
+  .user-info__name {
+    font-size: 24px;
+  }
+
+  .timeframe {
+    padding: 24px 21px 24px 36px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    padding-top: 38px;
+  }
+
+  .card-content {
+    padding: 28px 24px;
+    gap: 7px;
+  }
+
+  .card-info-wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-info__current {
+    font-size: 32px;
+  }
 }
