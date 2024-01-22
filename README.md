@@ -1,29 +1,30 @@
-# Frontend Mentor - $ProjectName
+# Frontend Mentor - Time Tracking Dashboard
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Havoc-Solutions/$project-name?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/Havoc-Solutions/$project-name)
-![W3C Validation](https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Feon-$project-name.netlify.app%2F)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/Havoc-Solutions/time-tracking-dashboard?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/Havoc-Solutions/time-tracking-dashboard)
+![W3C Validation](https://img.shields.io/w3c-validation/html?style=flat-square&targetUrl=https%3A%2F%2Feon-time-tracking-dashboard.netlify.app%2F)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
-This is a solution to [$ProjectName](). Frontend Mentor challenges help you
+This is a solution
+to [Time Tracking Dashboard](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend
+Mentor challenges help you
 improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-    - [Links](#links)
-    - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Screenshot](#screenshot)
 - [Try it out!](#try-it-out)
-    - [Run with Node.js](#run-with-nodejs)
-    - [Run with Docker](#run-with-docker)
+  - [Run with Node.js](#run-with-nodejs)
+  - [Run with Docker](#run-with-docker)
 - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
+  - [Built with](#built-with)
 
 ## Overview
 
 ### Links
 
-- [Check the Live Site](https://eon-$project-name.netlify.app/)
+- [Check the Live Site](https://eon-time-tracking-dashboard.netlify.app/)
 - [My Solution on Frontend Mentor]()
 
 ### Screenshot
@@ -43,7 +44,7 @@ npm install && npm start
 The app will be available at http://127.0.0.1:3000/
 
 ```shell
-docker run -d -p 3000:3000 eonraider/$project-name
+docker run -d -p 3000:3000 eonraider/time-tracking-dashboard
 ```
 
 ## My process
@@ -59,5 +60,4 @@ docker run -d -p 3000:3000 eonraider/$project-name
 
 - Semantic HTML5 markup
 - Cube CSS methodology
-
-### What I learned
+- TypeScript
