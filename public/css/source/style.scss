@@ -2,7 +2,215 @@
 @use 'utils' as utils;
 @use 'variables' as vars;
 
+@include utils.setFont(Rubik, url('../fonts/Rubik-Light.ttf'), 300);
+@include utils.setFont(Rubik, url('../fonts/Rubik-Regular.ttf'), 400);
+@include utils.setFont(Rubik, url('../fonts/Rubik-Medium.ttf'), 500);
+
+:root {
+  font-family: Rubik, sans-serif;
+}
+
 // COMPOSITION
+body {
+  justify-content: center;
+  align-items: center;
+}
+
 // UTILITIES
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.bg-primary {
+  background-color: vars.$clr-black-50;
+}
+
+.bg-secondary {
+  background-color: vars.$clr-lavender-50;
+}
+
+.bg-highlight {
+  background-color: vars.$clr-lavender-200;
+}
+
+.clr-primary, .clr-active {
+  color: vars.$clr-white-800;
+}
+
+.clr-secondary {
+  color: vars.$clr-lavender-600;
+}
+
+.clr-inactive {
+  color: vars.$clr-lavender-400;
+}
+
+.fnt-light {
+  font-weight: 300;
+}
+
+.fnt-medium {
+  font-weight: 500;
+}
+
 // BLOCK
+.user-menu, .card, .card-content, .user-info {
+  border-radius: vars.$bdr-radius-primary;
+}
+
+.user-menu {
+  grid-row: span 2;
+}
+
+.user-info {
+  flex-direction: column;
+  gap: 43px;
+  padding: 37px 0 85px 32px;
+}
+
+.user-profile__photo {
+  @include utils.setDimensions(78px, 78px);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  border: 3px solid #D8D8D8;
+}
+
+.user-info-wrapper {
+  --flow-space: 3px;
+}
+
+.user-profile__title {
+  font-size: 15px;
+}
+
+.user-info__name {
+  font-size: 40px;
+}
+
+.timeframe {
+  padding: 26px 0 0 32px;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.timeframe__select {
+  display: none;
+}
+
+.timeframe__option {
+  font-size: 18px;
+}
+
+.card {
+  background-position: top -11px right 17px;
+  background-repeat: no-repeat;
+  padding-top: 45px;
+}
+
+.card-1 {
+  background-color: vars.$clr-orange-400;
+  background-image: url('../images/icon-work.svg');
+}
+
+.card-2 {
+  background-position: top -5px right 21px;
+  background-color: vars.$clr-blue-400;
+  background-image: url('../images/icon-play.svg');
+}
+
+.card-3 {
+  background-color: vars.$clr-red-400;
+  background-image: url('../images/icon-study.svg');
+}
+
+.card-4 {
+  background-position: top right 18px;
+  background-color: vars.$clr-green-400;
+  background-image: url('../images/icon-exercise.svg');
+}
+
+.card-5 {
+  background-position: top -13px right 19px;
+  background-color: vars.$clr-purple-400;
+  background-image: url('../images/icon-social.svg');
+}
+
+.card-6 {
+  background-position: top -11px right 16px;
+  background-color: vars.$clr-yellow-400;
+  background-image: url('../images/icon-self-care.svg');
+}
+
+.card-content {
+  flex-direction: column;
+  gap: 25px;
+  padding: 29px 35px 32px 30px;
+}
+
+.card-category-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-category__name {
+  font-size: 18px;
+}
+
+.card-info-wrapper {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-info__current {
+  font-size: 56px;
+}
+
+.card-info__previous {
+  font-size: 15px;
+}
+
 // EXCEPTIONS
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.timeframe__option:hover,
+.card-category__ellipsis:hover,
+.card-content:hover {
+  cursor: pointer;
+  @extend .transition;
+}
+
+.timeframe__option:hover, .timeframe__select:checked + .timeframe__option {
+  @extend .clr-active;
+}
+
+.card-category__ellipsis:hover svg path {
+  fill: vars.$clr-white-800;
+}
+
+.card-content:hover {
+  background-color: vars.$clr-lavender-100;
+}
+
+// DESKTOP VERSION
+@media only screen and (width >= 1440px) {
+  main {
+    max-width: 1110px;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 30px;
+  }
+}
+
+// MOBILE VERSION
+@media only screen and (width < 1440px) {
+
+}

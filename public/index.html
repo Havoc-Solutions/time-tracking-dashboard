@@ -1,17 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <script defer src="js/script.js"></script>
-    <title></title>
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+        <script defer src="js/script.js"></script>
+        <title>Time Tracking Dashboard</title>
+    </head>
 
-  <body>
-    <main>
-      <h1>Project template for Frontend Mentor challenges</h1>
-    </main>
-  </body>
+    <body class="| flex bg-primary">
+        <main class="| grid">
+            <section class="user-menu | bg-secondary">
+                <div class="user-info | flex bg-highlight">
+                    <img src="images/image-jeremy.png" alt="User profile photo" class="user-profile__photo">
+                    <div class="user-info-wrapper | flow">
+                        <p class="user-info__title | clr-secondary">Report for</p>
+                        <h2 class="user-info__name | clr-primary fnt-light">Jeremy Robson</h2>
+                    </div>
+                </div>
+                <div class="timeframe | flex">
+                    <div>
+                        <input class="timeframe__select" type="radio" name="daily" id="daily">
+                        <label class="timeframe__option | clr-inactive" for="daily">Daily</label>
+                    </div>
+                    <div>
+                        <input class="timeframe__select" type="radio" name="daily" id="weekly" checked>
+                        <label class="timeframe__option | clr-inactive" for="weekly">Weekly</label>
+                    </div>
+                    <div>
+                        <input class="timeframe__select" type="radio" name="daily" id="monthly">
+                        <label class="timeframe__option | clr-inactive" for="monthly">Monthly</label>
+                    </div>
+                </div>
+            </section>
+
+            <div class="card card-1">
+                <div class="card-content | flex bg-secondary">
+                    <section class="card-category-wrapper | flex">
+                        <h2 class="card-category__name | clr-primary fnt-medium">Work</h2>
+                        <div class="card-category__ellipsis">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                      fill="#BBC0FF" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </section>
+                    <section class="card-info-wrapper | flex">
+                        <h2 class="card-info__current | clr-primary fnt-light">
+                            <span class="card-info__current-value">32</span>hrs
+                        </h2>
+                        <p class="card-info__previous | clr-secondary">Last Week -
+                            <span class="card-info__previous-value">36</span>hrs
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card card-2">
+                <div class="card-content | flex bg-secondary">
+                    <section class="card-category-wrapper | flex">
+                        <h2 class="card-category__name | clr-primary fnt-medium">Play</h2>
+                        <div class="card-category__ellipsis">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                      fill="#BBC0FF" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </section>
+                    <section class="card-info-wrapper | flex">
+                        <h2 class="card-info__current | clr-primary fnt-light">
+                            <span class="card-info__current-value">32</span>hrs
+                        </h2>
+                        <p class="card-info__previous | clr-secondary">Last Week -
+                            <span class="card-info__previous-value">36</span>hrs
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card card-3">
+                <div class="card-content | flex bg-secondary">
+                    <section class="card-category-wrapper | flex">
+                        <h2 class="card-category__name | clr-primary fnt-medium">Study</h2>
+                        <div class="card-category__ellipsis">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                      fill="#BBC0FF" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </section>
+                    <section class="card-info-wrapper | flex">
+                        <h2 class="card-info__current | clr-primary fnt-light">
+                            <span class="card-info__current-value">32</span>hrs
+                        </h2>
+                        <p class="card-info__previous | clr-secondary">Last Week -
+                            <span class="card-info__previous-value">36</span>hrs
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card card-4">
+                <div class="card-content | flex bg-secondary">
+                    <section class="card-category-wrapper | flex">
+                        <h2 class="card-category__name | clr-primary fnt-medium">Exercise</h2>
+                        <div class="card-category__ellipsis">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                      fill="#BBC0FF" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </section>
+                    <section class="card-info-wrapper | flex">
+                        <h2 class="card-info__current | clr-primary fnt-light">
+                            <span class="card-info__current-value">32</span>hrs
+                        </h2>
+                        <p class="card-info__previous | clr-secondary">Last Week -
+                            <span class="card-info__previous-value">36</span>hrs
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card card-5">
+                <div class="card-content | flex bg-secondary">
+                    <section class="card-category-wrapper | flex">
+                        <h2 class="card-category__name | clr-primary fnt-medium">Social</h2>
+                        <div class="card-category__ellipsis">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                      fill="#BBC0FF" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </section>
+                    <section class="card-info-wrapper | flex">
+                        <h2 class="card-info__current | clr-primary fnt-light">
+                            <span class="card-info__current-value">32</span>hrs
+                        </h2>
+                        <p class="card-info__previous | clr-secondary">Last Week -
+                            <span class="card-info__previous-value">36</span>hrs
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <div class="card card-6">
+                <div class="card-content | flex bg-secondary">
+                    <section class="card-category-wrapper | flex">
+                        <h2 class="card-category__name | clr-primary fnt-medium">Self Care</h2>
+                        <div class="card-category__ellipsis">
+                            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                                      fill="#BBC0FF" fill-rule="evenodd"/>
+                            </svg>
+                        </div>
+                    </section>
+                    <section class="card-info-wrapper | flex">
+                        <h2 class="card-info__current | clr-primary fnt-light">
+                            <span class="card-info__current-value">32</span>hrs
+                        </h2>
+                        <p class="card-info__previous | clr-secondary">Last Week -
+                            <span class="card-info__previous-value">36</span>hrs
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
